@@ -3,11 +3,13 @@
   <tr>
     <% @figures.all.each do |figure| %>
       <a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+
       <ul>
         <% figure.titles.each do |title| %>
           <li><%= title.name %></li>
         <% end %>
       </ul>
+      <% end %>
     </tr>
   </th>
 </table>
